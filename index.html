@@ -14,196 +14,213 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="/images/1.png" class="logo" alt="Logo">
-                <ul>
-                    <li> <a href="#home"> Home</a></li>
-                    <li> <a href="#about"> About</a></li>
-                    <li> <a href="#services"> Services</a></li>
-                    <li> <a href="#portfolio"> Portfolio</a></li>
-                    <li> <a href="#contact"> Contact</a></li>
+                <img src="/image.png" class="logo" alt="Logo">
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times"></i>
                 </ul>
                 <i class="fas fa-bars"></i>
             </nav>
+            
             <div class="header-text">
-                <p> UI/UX Designer</p>
-                <h1> Hi!, I am <span>Shivani Kasaudhan</span> <br> from India</h1>
+                <p>Full-Stack Developer | AI/ML Enthusiast</p>
+                <h1>Hi! I’m <span>Shivani Kasaudhan</span>,<br> a passionate developer from India.</h1>
             </div>
         </div>
     </div>
+    
 
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="https://raw.githubusercontent.com/username/repository/branch/images/me.png" alt="Profile Image">
+  <!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/me.png" alt="Profile Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I’m Shivani Kasaudhan, a passionate Full-Stack Developer and AI/ML enthusiast based in India. 
+                   I specialize in building intuitive web applications and AI-powered solutions that improve user experience and streamline efficiency. 
+                   My expertise lies in React, Python, and Machine Learning, with a strong foundation in problem-solving and system design.</p>
 
-
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hello! I’m Shivani Kasaudhan, a passionate UI/UX designer based in India. I love creating
-                        seamless and intuitive designs that provide an exceptional user experience. With my skills in
-                        design and a keen eye for detail, I ensure that every project I work on is a blend of
-                        functionality and creativity.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span> C/C++/Python</span></li>
-                            <li><span> UI/UX</span><br>Designing Web/app interfaces </span></li>
-                            <li><span> Full stack development</span></li>
-                            <li><span> Git</span></li>
-                            <li><span> MySQL</span></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul class="experience-list">
-                            <li><span class="experience">Software Development Intern at BUEStock Fintech</span><br> June
-                                2024 - July 2024</li>
-                            <li><span class="experience">Full Stack Developer at Gemini Clone Project</span><br> Ongoing
-                            </li>
-                            <li><span class="experience">AI/ML Competition at TurboAI</span><br> November 2024</li>
-                            <li><span class="experience">Task Management Dashboard Project</span><br> November 2024 -
-                                December 2024</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul class="education-list">
-                            <li><span class="education">B.Tech in Computer Science and Engineering (Data
-                                    Science)</span><br> KCC Institute of Technology and Management, Greater Noida<br>
-                                Expected Graduation: September 2026</li>
-                        </ul>
-                    </div>
 
+                <!-- Skills Section -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C / C++ / Python</span></li>
+                        <li><span>Full-Stack Development</span> (React, Node.js, Express, MongoDB)</li>
+                        <li><span>AI & Machine Learning</span> (Scikit-Learn, OpenCV, TensorFlow)</li>
+                        <li><span>UI/UX Design</span> (Figma, Adobe XD, Frontend Development)</li>
+                        <li><span>Database Management</span> (MySQL, Firebase, MongoDB)</li>
+                        <li><span>Version Control</span> (Git, GitHub)</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="tab-contents" id="experience">
+                    <ul class="experience-list">
+                        <li>
+                            <strong>Software Development Intern at BUEStock Fintech</strong><br>
+                            <em>June 2024 - July 2024</em><br>
+                            Developed and optimized fintech solutions with frontend and backend technologies.
+                        </li>
+                        <li>
+                            <strong>Full-Stack Developer - Gemini Clone Project</strong><br>
+                            <em>Completed - March 2025</em><br>
+                            Built an AI-powered chatbot interface with React, integrating a seamless UI/UX.<br>
+                            <a href="https://github.com/kasaudhanshivani/gemini_clone" target="_blank">View on GitHub</a>
+                        </li>
+                        <li>
+                            <strong>AICTE-TechSaksham Internship - Face Recognition Attendance System</strong><br>
+                            <em>December 2024 - January 2025</em><br>
+                            Implemented a real-time attendance system using AI and OpenCV.
+                        </li>
+                        <li>
+                            <strong>Task Management Dashboard Project</strong><br>
+                            <em>November 2024 - December 2024</em><br>
+                            Designed a productivity dashboard using React & Redux.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Education Section -->
+                <div class="tab-contents" id="education">
+                    <ul class="education-list">
+                        <li>
+                            <strong>B.Tech in Computer Science and Engineering (Data Science)</strong><br>
+                            KCC Institute of Technology and Management, Greater Noida<br>
+                            <em>Expected Graduation: September 2026</em>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
-
         </div>
     </div>
-    </div>
-    </div>
+</div>
 
-    <!-- Services Section -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-paint-brush"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Creating beautiful and functional interfaces that offer a great user experience.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>Building responsive websites that are optimized for performance across devices.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-cogs"></i>
-                    <h2>App Maintenance</h2>
 
-                    <p>Providing regular updates and bug fixes to keep your app functioning smoothly and up to date.</p>
-                    <a href="#">Learn more</a>
-                </div>
-
+   <!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div class="service-card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Full-Stack Development</h2>
+                <p>Developing scalable web applications using React, Node.js, and MySQL.</p>
             </div>
-
+            <div class="service-card">
+                <i class="fa-solid fa-microchip"></i>
+                <h2>AI & Machine Learning</h2>
+                <p>Building AI-powered applications with NLP, deep learning, and predictive analytics.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Science & Analytics</h2>
+                <p>Data visualization, predictive modeling, and statistical analysis.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Cloud & DevOps</h2>
+                <p>Deploying and managing applications on AWS, Azure, and Docker.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-lock"></i>
+                <h2>Cybersecurity Basics</h2>
+                <p>Implementing secure authentication and data protection in web apps.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-cogs"></i>
+                <h2>App Optimization</h2>
+                <p>Improving performance, SEO, and user experience for web applications.</p>
+            </div>
         </div>
     </div>
-    </div>
-
+</section>
 
     <!-- Portfolio Section -->
-    <div id="portfolio">
+    <section id="portfolio">
         <div class="container">
             <h1 class="sub-title"> My Work</h1>
             <p>Take a look at some of my recent projects:</p>
-
-            <div class="work-list">
-
+    
+            <di class="work-list">
+    
                 <!-- Project 1: Gemini Clone App -->
                 <div class="work">
-                    <img src="/images/work-1.png" alt="Work 1">
+                    <img src="/image copy 3.png" alt="Gemini Clone App">
                     <div class="layer">
                         <h3>Gemini Clone App</h3>
-                        <p>This app was created using React and provides a user-friendly interface with advanced
-                            features,
-                            replicating the Gemini platform. It demonstrates my expertise in full-stack development and
-                            UI
-                            design.</p>
+                        <p>Developed using React, replicating the Gemini platform with a smooth UI/UX.</p>
                         <a href="https://github.com/kasaudhanshivani/gemini_clone" target="_blank">View on GitHub</a>
                     </div>
+                
+                
                 </div>
-
+    
                 <!-- Project 2: Task Management Dashboard -->
                 <div class="work">
-                    <img src="/images/work-2.png" alt="work2">
+                    <img src="/smsspam.jpg" alt="SMS Spam Detection App">
                     <div class="layer">
-                        <h3>Task Management Dashboard</h3>
-                        <p>Designed and built a Task Management Dashboard using React and Redux. This project included
-                            features
-                            like task CRUD operations, filtering, and responsive UI/UX design, which was part of an
-                            internship
-                            selection process.</p>
-                        <a href="https://kasaudhanshivani.github.io/task-dashboard" target="_blank">View Live
-                            Project</a>
-                    </div>
+                        <h3>SMS Spam Detection App</h3>
+                        <p>A machine learning-based app to classify SMS messages as spam or ham.</p>
+                        <a href="https://github.com/kasaudhanshivani/SMS-SPAM-DETECTION-APP" target="_blank">View on GitHub</a>
+                    </div>  
                 </div>
+                
+                
+    
                 <!-- Project 3: Login Page -->
                 <div class="work">
-                    <img src="/images/work-3.png" alt="Login Page">
+                    <img src="/image copy.png" alt="Login Page">
                     <div class="layer">
-
                         <h3>Login Page</h3>
-                        <p>A simple and secure login page built with HTML, CSS, and JavaScript. This project is part of
-                            my
-                            portfolio to showcase basic authentication and user interface design.</p>
+                        <p>A secure login system with frontend validation.</p>
                     </div>
                 </div>
-
+    
                 <!-- Project 4: Robo Speaker -->
                 <div class="work">
-                    <img src="/images/robo_speaker.png" alt="Robo Speaker">
+                    <img src="image copy 2.png" alt="Robo Speaker">
                     <div class="layer">
                         <h3>Robo Speaker</h3>
-                        <p>A fun and interactive project where I developed a Robo Speaker using JavaScript. This project
-                            involved building a chatbot that could interact with users, making it an interesting
-                            showcase of AI
-                            and voice interaction technology.</p>
+                        <p>Interactive chatbot project using JavaScript.</p>
                     </div>
                 </div>
-
+    
                 <!-- Project 5: Tic Tac Toe -->
                 <div class="work">
-                    <img src="/images/tic-tac-toe.png" alt="Tic Tac Toe Game">
+                    <img src="/tic.jpg" alt="Tic Tac Toe Game">
                     <div class="layer">
                         <h3>Tic Tac Toe</h3>
-                        <p>This is a classic game of Tic Tac Toe built with HTML, CSS, and JavaScript. The game features
-                            interactive gameplay, allowing two players to compete against each other.</p>
+                        <p>Classic 2-player game using JavaScript.</p>
                     </div>
                 </div>
-
+    
                 <!-- Project 6: Rock, Paper, Scissors -->
                 <div class="work">
-                    <img src="/images/rock-paper-scisssor.png" alt="Rock Paper Scissors Game">
+                    <img src="/rock.jpg" alt="Rock Paper Scissors Game">
                     <div class="layer">
                         <h3>Rock, Paper, Scissors</h3>
-                        <p>Another fun project where I built the Rock, Paper, Scissors game using JavaScript. It allows
-                            players
-                            to play the game against the computer, demonstrating basic game logic and interaction.</p>
+                        <p>Play against the computer with randomized AI choices.</p>
                     </div>
                 </div>
+    
                 <a href="#" class="btn">See more</a>
             </div>
         </div>
+    </section>
+    
 
         <!-- Contact Section -->
         <div id="contact">
