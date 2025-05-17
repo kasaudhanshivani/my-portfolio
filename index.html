@@ -252,6 +252,7 @@
                             <button type="submit">Send Message</button>
 
                         </form>
+                    <spam id="msg"></spam>    
                     </div>
                 
             </div>
@@ -276,18 +277,24 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+   
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzoQ6oBZ2w80m1MjTjo_LajW8szN8mC7frgJdYgfipPuTkcZkGLbLXz3F5nkNBlqVNA/exec'
-        const form = document.forms['submit-to-google-sheet']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-        })
-        
-    </script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxAzu-lJklr1hvyWrTr_fe5OqFmLbiI2oK9mtJiD39eclEk4KVwNvyQGdpAJ2ZaMGc/exec'
+  const form = document.forms['submit-to-google-sheet']
+ const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 50)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 
 </html>

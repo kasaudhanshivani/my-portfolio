@@ -529,3 +529,9 @@ background-image: url('../images/Untitled design (1).png');
          color: #ff004f;
      }
 }
+
+#msg{
+    color:aqua;
+    margin: top: -20px;
+    display:block;
+}
